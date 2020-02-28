@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'UniSansHeavyCaps';
+  src: url('UniSansHeavyCaps.ttf') format('truetype'),
+       url('UniSansHeavyCaps.woff') format('woff'),
+       url('UniSansHeavyCaps.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

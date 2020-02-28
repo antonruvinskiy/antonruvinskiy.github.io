@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Parangon530C';
+  src: url('Parangon530C.ttf') format('truetype'),
+       url('Parangon530C.woff') format('woff'),
+       url('Parangon530C.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
