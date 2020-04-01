@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css\font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../JuniorCode/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../JuniorCode/css/slick-theme.css"/>
     <link rel="stylesheet" href="css\style.css">
     <link rel="shortcut icon" href="img\Logo\logo_sq.png" type="image/x-icon">
     <title>Айтишонок - школа программирования для детей</title>
 </head>
 <body>
+    <div id="upbutton"></div> <!-- Кнопка Наверх -->
+    
     <header>
         <div class="container">
             <div class="header">
@@ -71,25 +77,22 @@
                     <h2>КУРСЫ программирования</h2>
                     <!-- карусель панелек -->
                     <div class="kurs__carusel">
-                        <div class="carousel-3d ">
-                            <figure>
-                                <div><a href="#any"><img src="img\Kurs\kurs1.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs2.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs3.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs4.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs5.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs6.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs7.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs8.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs9.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs10.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs11.JPG" alt=""/></a></div>
-                                <div><a href="#any"><img src="img\Kurs\kurs12.JPG" alt=""/></a></div>
-                            </figure>
-                            <nav>
-                                <button class="nav prev">Назад</button>
-                                <button class="nav next">Вперед</button>
-                            </nav>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs1.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs2.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs3.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs4.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs5.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs6.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs7.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs8.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs9.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs10.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs11.JPG)"></a>
+                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs12.JPG)"></a>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -101,6 +104,39 @@
                 <div class="otziv__block">
                     <h2>ОТЗЫВЫ НАШИХ клиентОВ</h2>
                     <!-- карусель отзывов -->
+                    <!-- Карусель -->
+                    <div class="otziv__carusel">
+                        <div class="otziv__text">
+                            <h3>Наргиза Аюпова</h3>
+                            <p>Мой ребёнок ходит в Юниоркод. Начали уроки с программой Scratch. Сыну очень нравится, сделали много игр. </p>
+                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(4).jpg" alt="">
+                        </div>
+                        <div class="otziv__text">
+                            <h3>Усманова Эзоза</h3>
+                            <p>Мой 6-летний сын учится в Юниоркоде. Мы довольны. После 4х месяцев получил сертификат. Спасибо Юниоркоду!</p>
+                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(5).jpg" alt="">
+                        </div>
+                        <!-- <div class="otziv__text">
+                            <h3>Готовим к будущему</h3>
+                            <p>Программист - одна из самых востребованных профессий XXI века. А если ребёнок захочет строить карьеру в другой области, приобретённые навыки пригодятся ему в жизни</p>
+                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(6).jpg" alt="">
+                        </div>
+                        <div class="otziv__text">
+                            <h3>Развиваем навыки и способности XXI века</h3>
+                            <p>Программирование развивает логику и абстрактное мышление, учит планировать, строить взаимосвязи, быстро разбираться в поставленных задачах и реализовывать любые идеи</p>
+                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(7).jpg" alt="">
+                        </div>
+                        <div class="otziv__text">
+                            <h3>Помогаем учиться</h3>
+                            <p>Занятия программированием тренируют память, развивают воображение и любознательность. Это значительно повышает успеваемость в школе</p>
+                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(8).jpg" alt="">
+                        </div>
+                        <div class="otziv__text">
+                            <h3>Готовим к будущему</h3>
+                            <p>Программист - одна из самых востребованных профессий XXI века. А если ребёнок захочет строить карьеру в другой области, приобретённые навыки пригодятся ему в жизни</p>
+                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(9).jpg" alt="">
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,6 +208,7 @@
     
     <!-- Подключение jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <!-- Подключение Slick -->
     <script src="js\slick.min.js"></script>
     <!-- Подключение файла скриптов -->
@@ -179,5 +216,9 @@
     
     <!-- Подключение JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    
+    <!-- Подключение Свайпера -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 </body>
 </html>

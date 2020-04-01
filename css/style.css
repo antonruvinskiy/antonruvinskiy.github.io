@@ -3104,6 +3104,26 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
 }
 
+/* Кнопка Наверх */
+#upbutton {
+  background: url("../img/buttons/up3.webp") no-repeat center;
+  background-size: 80% auto;
+  height: 100%;
+  width: 60px;
+  right: 0px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+#upbutton:hover {
+  background: url("../img/buttons/up4.webp") no-repeat center;
+  background-size: 90% auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 header {
   /* max-height: 100vh; */
   /* height: 100%; */
@@ -3252,7 +3272,7 @@ content .about__carusel .slick-next {
   right: 0;
 }
 content .about__items {
-  display: flex;
+  display: inline-flex !important;
 }
 content .about__items img {
   height: 400px;
@@ -3289,7 +3309,7 @@ content .kurs::before {
 content .kurs h2 {
   font-size: 40px;
   text-transform: uppercase;
-  margin: 20px auto;
+  margin: 20px;
   position: relative;
 }
 content .kurs h3 {
@@ -3297,92 +3317,120 @@ content .kurs h3 {
   opacity: 0.5;
   position: relative;
 }
-content .kurs__carusel .carousel-3d {
-  padding: 20px;
-  perspective: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-}
-content .kurs__carusel .carousel-3d > * {
-  flex: 0 0 auto;
-}
-content .kurs__carusel .carousel-3d figure {
-  margin: 0;
-  width: 50%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
-content .kurs__carusel .carousel-3d figure img,
-content .kurs__carusel .carousel-3d figure div {
+content .kurs__carusel .swiper-container {
   width: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  box-shadow: 0 0 5px #ffcc00;
+  padding-bottom: 50px;
 }
-content .kurs__carusel .carousel-3d figure div:not(:first-of-type),
-content .kurs__carusel .carousel-3d figure img:not(:first-of-type) {
-  position: absolute;
-  left: 0;
-  top: 0;
+content .kurs__carusel .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
 }
-content .kurs__carusel .carousel-3d nav {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 0;
+content .kurs__carusel a {
+  width: 100%;
+  cursor: grab;
 }
-content .kurs__carusel .carousel-3d nav button {
-  text-decoration: none;
-  outline: none;
-  display: inline-block;
-  padding: 10px 10px;
-  margin: 10px 20px;
+content .kurs__carusel a:active {
+  cursor: grabbing;
+}
+content .otziv {
   position: relative;
-  color: white;
-  border: 0px solid rgba(255, 255, 255, 0.4);
-  background: none;
-  box-shadow: inset 0 0 15px 10px #0033cc, 0 0 2px #0033cc;
-  font-weight: 300;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  -webkit-user-select: none;
+          user-select: none;
 }
-content .kurs__carusel .carousel-3d nav button:before, content .kurs__carusel .carousel-3d nav button:after {
+content .otziv::before {
   content: "";
   position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
-}
-content .kurs__carusel .carousel-3d nav button:before {
-  bottom: 0;
   left: 0;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  transition: 0s ease opacity 0.8s, 0.2s ease width 0.4s, 0.2s ease height 0.6s;
-}
-content .kurs__carusel .carousel-3d nav button:after {
   top: 0;
-  right: 0;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
-}
-content .kurs__carusel .carousel-3d nav button:hover:before, content .kurs__carusel .carousel-3d nav button:hover:after {
-  height: 100%;
   width: 100%;
-  opacity: 1;
+  height: 100%;
+  background: url(../img/Background/background2.jpg) 0 0 repeat;
+  opacity: 0.2;
 }
-content .kurs__carusel .carousel-3d nav button:hover:before {
-  transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s;
+content .otziv__block {
+  text-align: center;
+  padding: 30px;
 }
-content .kurs__carusel .carousel-3d nav button:hover:after {
-  transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
+content .otziv__block h2 {
+  color: #0033cc;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-content .kurs__carusel .carousel-3d nav button:hover {
-  background: rgba(255, 255, 255, 0.2);
+content .otziv .slick-list {
+  overflow: hidden;
+}
+content .otziv .slick-track {
+  display: flex;
+}
+content .otziv__carusel {
+  margin: 40px 0;
+  position: relative;
+  padding: 0 30px;
+  /* .slick-dots {
+      display: inline-flex;
+      margin-top: 60px;
+
+      .slick-active {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 1px solid $brand-color2;
+          button {
+
+          }
+      }
+  } */
+}
+content .otziv__carusel .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+}
+content .otziv__carusel .slick-prev {
+  left: 0;
+}
+content .otziv__carusel .slick-next {
+  right: 0;
+}
+content .otziv .slick-current h3 {
+  font-size: 50px;
+}
+content .otziv .slick-current p {
+  color: #0033cc;
+  font-size: 20px;
+}
+content .otziv .slick-current img {
+  margin-top: 20px;
+  border-radius: 40px;
+  height: 250px;
+  width: 400px;
+}
+content .otziv__text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+content .otziv__text h3 {
+  color: #ffcc00;
+  text-shadow: 0 0 2px #ee2424;
+  font-size: 0px;
+  font-weight: bold;
+}
+content .otziv__text p {
+  color: #0033cc;
+  font-size: 0px;
+}
+content .otziv__text img {
+  margin-top: 20px;
+  margin: auto;
+  border-radius: 40px;
+  height: 350px;
+  width: 600px;
 }
 content .contacts {
   font-size: 20px;
