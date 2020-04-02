@@ -3095,6 +3095,17 @@ h1, h2, h3, h4, h5, h6 {
   clip: auto;
 }
 
+/* @-webkit-keyframes autofill {
+    to {
+      color: inherit;
+      background: transparent;
+    }
+  }
+
+  input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  } */
 .container {
   /* max-width: 1158px; */
   width: 100%;
@@ -3725,6 +3736,15 @@ content .contacts__form {
   display: flex;
   justify-content: space-around;
   padding: 50px 100px;
+}
+content .contacts__form input:-webkit-autofill, content .contacts__form textarea:-webkit-autofill, content .contacts__form select:-webkit-autofill {
+  /* -webkit-box-shadow: transparent!important; */
+  /* цвет вашего фона */
+  -webkit-text-fill-color: #ffcc00 !important;
+  /* цвет текста */
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #ffcc00 !important;
 }
 content .contacts__formleft {
   color: #ffcc00;
@@ -4399,7 +4419,7 @@ footer .footer .social__link img {
     width: 100px !important;
     margin-top: 20px !important;
     padding: 15px 15px !important;
-    font-size: 10px !important;
+    font-size: 9px !important;
     border-radius: 30px !important;
   }
 }
