@@ -3366,10 +3366,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 300px;
   }
   .content__slide h2 {
-    font-size: 0px;
+    font-size: 0px !important;
+    display: none;
   }
   .content__slide h3 {
-    font-size: 0px;
+    font-size: 0px !important;
+    display: none;
   }
   .content__slide img {
     height: 95px;
