@@ -3,231 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css\font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="../JuniorCode/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../JuniorCode/css/slick-theme.css"/>
+    <link rel="stylesheet" href="css\slick.css">
+    <link rel="stylesheet" href="css\slick-theme.css">
     <link rel="stylesheet" href="css\style.css">
-    <link rel="shortcut icon" href="img\Logo\logo_sq.png" type="image/x-icon">
-    <title>Айтишонок - школа программирования для детей</title>
+    <link rel="shortcut icon" href="/img/logo/title.png" type="image/x-icon">
+    <title>WeeKenD</title>
 </head>
 <body>
-    <div id="upbutton"></div> <!-- Кнопка Наверх -->
-    
-    <header>
-        <div class="container">
+    <div class="wrapper">
             <div class="header">
-                <div class="header__logo">
-                    <a href="#"><img src="img\Logo\logo_line.png" alt=""></a>
-                </div>
-                
-                <!-- Бургер -->
-                <div class="burger">
-                    <!-- Этот чекбокс даст нам поведение переключателя, 
-                     он будет скрыт, но работать -->
-                    <input id="toggle" type="checkbox">
-                    <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении 
-                     состояния чекбокса, является «братским» элементом для чекбокса -->
-                    <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
-                    <label class="toggle-container" for="toggle">
-                    <!-- Если меню открыто, то здесь будет иконка «X», 
-                     в противном случае просто иконка гамбургера -->
-                     <span class="button button-toggle"></span>
-                    </label>
-                    
-                    <nav class="nav">
-                        <a href="#about" class="nav-item">О нас</a> 
-                        <a href="#kurs" class="nav-item">Курсы</a>
-                        <a href="#otziv" class="nav-item">Отзывы</a>
-                        <a href="#contact" class="nav-item">Контакты</a>
-                    </nav>
-                </div>
-                
-                <nav class="header__menu">
-                    <a href="#about" class="header__link">О нас</a> 
-                    <a href="#kurs" class="header__link">Курсы</a>
-                    <a href="#otziv" class="header__link">Отзывы</a>
-                    <a href="#contact" class="header__link">Контакты</a>
-                </nav>
-            </div>
-            <hr>
-            <div class="title">
-                <h1 class="title__title">Школа <br> IT-образования</h1>
-                <p class="title__subtitle">«Чтобы быть предпринимателем, неважно в какой сфере, придется любить изобретать и создавать.» <br> Джефф Безос</p>
-                <a href="https://docs.google.com/forms/d/1ezzj9Qfjxbj6f6bM5_3NzeRjg4BiLuDw4tM9jsaF76Y/edit?ts=5d77bad3" class="title__button">Присоединяйтесь!</a>
-            </div>
-        </div>
-        
-    </header>
-    
-    <content>
-        <div id="about" class="about">
-            <div class="container">
-                <div class="about__block">
-                    <h2 class="about__title">Профессионалы в обучении программированию</h2>
-                    <p class="about__subtitle">Сложная алгоритмическая деятельность, которая «переведена» на детский язык и преподносится в нестандратной игровой форме</p>
-                    <!-- Карусель -->
-                    <div class="about__carusel">
-                        <div class="about__items"><img src="img\Background\dety-sydyat-za-kompyuterom-02(1).jpg" alt="">
-                        <div class="about__text">
-                            <h3>Развиваем навыки и способности XXI века</h3>
-                            <p>Программирование развивает логику и абстрактное мышление, учит планировать, строить взаимосвязи, быстро разбираться в поставленных задачах и реализовывать любые идеи</p>
-                        </div>
-                        </div>
-                        <div class="about__items"><img src="img\Background\dety-sydyat-za-kompyuterom-02(2).jpg" alt="">
-                        <div class="about__text">
-                            <h3>Помогаем учиться</h3>
-                            <p>Занятия программированием тренируют память, развивают воображение и любознательность. Это значительно повышает успеваемость в школе</p>
-                        </div>
-                        </div>
-                        <div class="about__items"><img src="img\Background\dety-sydyat-za-kompyuterom-02(3).jpg" alt="">
-                        <div class="about__text">
-                            <h3>Готовим к будущему</h3>
-                            <p>Программист - одна из самых востребованных профессий XXI века. А если ребёнок захочет строить карьеру в другой области, приобретённые навыки пригодятся ему в жизни</p>
-                        </div>
+                <div class="container">
+                    <div class="header__block">
+                        <a href="#" class="header__logo"><img src="img\logo\logo.png" alt="Логотип сайта"></a>
+                        <div class="header__nav">
+                            <a href="" class="header__link">Галерея</a>
+                            <a href="#" title="Магазин закрыт на карантин" class="header__link deactivate">Магазин</a>
+                            <a href="" class="header__link">Контакты</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div id="kurs" class="kurs">
-            <div class="container">
-                <div class="kurs__block">
-                    <h3>Подготовительные курсы в Ташкенте</h3>
-                    <h2>КУРСЫ программирования</h2>
-                    <!-- карусель панелек -->
-                    <div class="kurs__carusel">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs1.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs2.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs3.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs4.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs5.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs6.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs7.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs8.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs9.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs10.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs11.JPG)"></a>
-                                <a href="#any" class="swiper-slide" style="background-image:url(./img/Kurs/kurs12.JPG)"></a>
-                            </div>
-                            <div class="swiper-pagination"></div>
+            
+            <div class="content container">
+                    <div class="content__left">
+                        <div class="content__block">
+                            <h1>Рыбалка</h1>
+                            <p>       Рыболовы бывают двух видов: одни смотрят на это занятие как на спорт, другим удаётся что-то поймать.</p>
+                            <br>
+                            <p>       Рыба растет всего быстрее между той минутой, когда её поймали, и той, когда об этом рассказывают.</p>
+                            <a href="https://www.youtube.com/channel/UCug_X1kQWtVdpRQ4IsgMhDw" target="_blank" class="content__button">Перейти на канал YouTube</a>
+                        </div>
+                        <div class="content__slick">
+                            <div class="content__slide"><img src="img\tubes/tube1.JPG" alt=""><h2>Поймал</h2><h3>отпустил</h3></div>
+                            <div class="content__slide"><img src="img\tubes/tube2.JPG" alt=""><h2>Мастер класс</h2><h3>нахлыст, водянка</h3></div>
+                            <div class="content__slide"><img src="img\tubes/tube3.JPG" alt=""><h2>Поймал</h2><h3>отпустил 2</h3></div>
+                            <div class="content__slide"><img src="img\tubes/tube4.JPG" alt=""><h2>Мини отчет</h2><h3>о ловле крупной плотвы и шемайки</h3></div>
+                            <div class="content__slide"><img src="img\tubes/tube5.JPG" alt=""><h2>Как сделать отвод</h2><h3>за 1 минуту</h3></div>
+                            <div class="content__slide"><img src="img\tubes/tube6.JPG" alt=""><h2>Поймал</h2><h3>отпустил 3</h3></div>
+                            <div class="content__slide"><img src="img\tubes/tube7.JPG" alt=""><h2>Бровка</h2><h3></h3></div>
                         </div>
                     </div>
-                </div>
+                    <div class="content__right">
+                        <div class="content__tube">
+                            <div class="content__youtube"><iframe width="853" height="480" src="https://www.youtube.com/embed/9IsqbTMq5VA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="content__youtube"><iframe width="720" height="480" src="https://www.youtube.com/embed/xiYvLoYRxrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="content__youtube"><iframe width="853" height="480" src="https://www.youtube.com/embed/cmIyzb5w5Rc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="content__youtube"><iframe width="640" height="480" src="https://www.youtube.com/embed/uw4D8wQKK5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="content__youtube"><iframe width="853" height="480" src="https://www.youtube.com/embed/BXrRb3RMw3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="content__youtube"><iframe width="853" height="480" src="https://www.youtube.com/embed/B2haOl-VEPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="content__youtube"><iframe width="853" height="480" src="https://www.youtube.com/embed/NzIqvZ7_cFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        </div>
+                    </div>
             </div>
-        </div>
-        
-        <div id="otziv" class="otziv">
-            <div class="container">
-                <div class="otziv__block">
-                    <h2>ОТЗЫВЫ НАШИХ клиентОВ</h2>
-                    <!-- карусель отзывов -->
-                    <!-- Карусель -->
-                    <div class="otziv__carusel">
-                        <div class="otziv__text">
-                            <h3>Наргиза Аюпова</h3>
-                            <p>Мой ребёнок ходит в Юниоркод. Начали уроки с программой Scratch. Сыну очень нравится, сделали много игр. </p>
-                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(4).jpg" alt="">
-                        </div>
-                        <div class="otziv__text">
-                            <h3>Усманова Эзоза</h3>
-                            <p>Мой 6-летний сын учится в Юниоркоде. Мы довольны. После 4х месяцев получил сертификат. Спасибо Юниоркоду!</p>
-                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(5).jpg" alt="">
-                        </div>
-                        <!-- <div class="otziv__text">
-                            <h3>Готовим к будущему</h3>
-                            <p>Программист - одна из самых востребованных профессий XXI века. А если ребёнок захочет строить карьеру в другой области, приобретённые навыки пригодятся ему в жизни</p>
-                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(6).jpg" alt="">
-                        </div>
-                        <div class="otziv__text">
-                            <h3>Развиваем навыки и способности XXI века</h3>
-                            <p>Программирование развивает логику и абстрактное мышление, учит планировать, строить взаимосвязи, быстро разбираться в поставленных задачах и реализовывать любые идеи</p>
-                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(7).jpg" alt="">
-                        </div>
-                        <div class="otziv__text">
-                            <h3>Помогаем учиться</h3>
-                            <p>Занятия программированием тренируют память, развивают воображение и любознательность. Это значительно повышает успеваемость в школе</p>
-                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(8).jpg" alt="">
-                        </div>
-                        <div class="otziv__text">
-                            <h3>Готовим к будущему</h3>
-                            <p>Программист - одна из самых востребованных профессий XXI века. А если ребёнок захочет строить карьеру в другой области, приобретённые навыки пригодятся ему в жизни</p>
-                            <img src="./img/Background/dety-sydyat-za-kompyuterom-02(9).jpg" alt="">
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="contact" class="contacts">
-            <div class="contacts__block">
-                <div class="contacts__list">
-                    <div class="contacts__adress">
-                        <span class="contacts__adressico">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        </span>
-                        <h2 class="contacts__adresstitle">Наш адрес</h2>
-                        <a class="contacts__adresslink" href="https://maps.app.goo.gl/F1CW3rZBJ35tKLTb9">М.Улугбекский район, ул. Сайрам, дом 5/1</a>
-                    </div>
-                    <div class="contacts__phone">
-                        <span class="contacts__phoneico">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </span>
-                        <h2 class="contacts__phonetitle">Контакты</h2>
-                        <a class="contacts__phonelink" href="tel:+998712671350">+998 71 267-13-50</a>
-                        <a class="contacts__phonelink" href="tel:+998909731350">+998 90 973-13-50</a>
-                    </div>
-                    <div class="contacts__telegram">
-                        <span class="contacts__telegramico">
-                            <i class="fa fa-telegram" aria-hidden="true"></i>
-                        </span>
-                        <h2 class="contacts__telegramtitle">Мы в Telegram</h2>
-                        <a class="contacts__telegramlink" href="https://t.me/juniorcodequestions">@Группа</a>
-                        <a class="contacts__telegramlink" href="https://t.me/juniorcodeuz">@Канал</a>
-                    </div>
-                </div>
-                <div class="contacts__title">
-                    <h2>Найти нас очень просто!</h2>
-                    <p>Для Вашего комфорта мы предоставляем возможность обучаться в нашем главном филиале, удобно расположенном возле метро Буюк Ипак Йули (бывш. Максим Горький).</p>
-                    <hr>
-                </div>
-                <div class="contacts__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5656.0290184772475!2d69.31986606689541!3d41.326763828552764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5a95b1f8375%3A0x1b7c4c3bc6fbb67c!2z0K7QvdC40L7RgNCa0L7QtA!5e0!3m2!1sru!2s!4v1585561148855!5m2!1sru!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class="contacts__form">
-                    <div class="contacts__formleft">
-                        <h2>Остались вопросы?</h2>
-                        <p>Оставьте заявку для получения бесплатной консультации.</p>
-                    </div>
-                    <form class="contacts__formblock" action="./Mail/mail.php" method="POST">
-                        <input class="contacts__formblockname" type="text" name="name" placeholder="Ваше имя">
-                        <input class="contacts__formblocktel" type="tel" name="phone" id="" placeholder="Ваш номер телефона">
-                        <button class="contacts__formblockbutton" type="submit">Отправить    <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </content>
-    
-    <footer>
-        <div class="container">
+            
             <div class="footer">
-                <p class="rights">© 2019-2020 ООО "JUNIOR CODE". Все права защищены.</p>
-                
-                <div class="social">
-                    <a href="#" class="social__link"><img src="img\Social\instagram.png" alt=""></a>
-                    <a href="#" class="social__link"><img src="img\Social\FaceBook.png" alt=""></a>
-                    <a href="#" class="social__link"><img src="img\Social\telegram.png" alt=""></a>
+                <div class="container">
+                    <div class="footer__block">
+                        <p class="footer__text">© 2015 Dmitriy Yun. All right reserved.</p>
+                        <div class="footer__social">
+                            <a href="" class="footer__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="" class="footer__link"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="" class="footer__link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
-        </div>
-    </footer>
+    </div>
+    
     
     <!-- Подключение jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
