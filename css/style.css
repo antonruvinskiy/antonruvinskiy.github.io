@@ -3366,10 +3366,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 300px;
   }
   .content__slide h2 {
-    font-size: 15px;
+    font-size: 0px;
   }
   .content__slide h3 {
-    font-size: 10px;
+    font-size: 0px;
   }
   .content__slide img {
     height: 95px;
@@ -3400,22 +3400,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .content__slick {
-    width: 200px;
+    width: 220px;
   }
   .content__slick .slick-next {
     padding-left: 40px;
-  }
-  .content__slide h2 {
-    left: 5px;
-    font-size: 12px;
-  }
-  .content__slide h3 {
-    left: 5px;
-    font-size: 8px;
-  }
-  .content__slide img {
-    height: 65px;
-    width: 80px;
   }
   .content__tube {
     width: 250px;
