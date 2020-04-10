@@ -3109,6 +3109,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-between;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .header__block {
@@ -3209,6 +3210,9 @@ h1, h2, h3, h4, h5, h6 {
   left: 10px;
   bottom: 30%;
   text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .content__slide img {
   height: 115px;
