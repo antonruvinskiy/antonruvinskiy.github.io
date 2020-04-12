@@ -11,9 +11,10 @@ session_start();
         $mail = new PHPMailer(true);  
         $name = $_POST['name'];
         $phone = $_POST['phone'];
-        /* $email = $_POST['email'];
+        $content = $_POST['content'];
+        $email = $_POST['email'];
         $subject = $_POST['subject'];
-        $content = $_POST['content']; */
+        
     }
     try {
         //Server settings
@@ -27,16 +28,16 @@ session_start();
         $mail->Port = 465;                                    // TCP port to connect to
     
         //Recipients
-        $mail->setFrom('a.ruvinskiy@juniorcode.ru', 'Заявка с сайта');
-        $mail->addAddress('a.ruvinskiy@juniorcode.ru', 'Заявка с сайта');     // Add a recipient
+        $mail->setFrom('a.ruvinskiy@juniorcode.ru', 'Заявка с сайта WeeKend');
+        $mail->addAddress('a.ruvinskiy@juniorcode.ru', 'Заявка с сайта WeeKend');     // Add a recipient
 /*         $mail->addCC('cc@example.com');
         $mail->addBCC('bcc@example.com'); */
     
         //Content
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = 'Заявка на обратную связь';
-        $mail->Body    = "<b>Имя клиента</b> $name <br> <b>Телефон клиента</b> $phone" ;
-        /* <br> <b>Тема</b> $subject  <br> <b>Сообщение</b> $content"; */
+        $mail->Body    = "<b>Имя клиента</b> $name <br> <b>Телефон клиента</b> $phone 
+        <br> <b>Тема</b> $subject  <br> <b>Сообщение</b> $content";
         /* $mail->AltBody = 'This is the body in plain text for non-HTML mail clients'; */
     if($mail->send()) {
         $_SESSION['msg'] = 'Сообщение отправлено';
