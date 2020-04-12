@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css\slick.css">
+    <link rel="stylesheet" href="css\slick-theme.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="shortcut icon" href="/img/logo/title.png" type="image/x-icon">
+    <title>WeeKenD</title>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="header">
+                <div class="container">
+                    <div class="header__block">
+                        <a href="#" class="header__logo"><img src="img\logo\logo.png" alt="Логотип сайта"></a>
+                        <div class="header__nav">
+                            <a href="index.html" class="header__link">Главная</a>
+                            <a href="#" title="Магазин закрыт на карантин" class="header__link deactivate">Магазин</a>
+                            <a href="" class="header__link">Галерея</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact container" action="./Mail/mail.php" method="POST">
+                <div class="contact__block">
+                    <div class="contact__left">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="tel" name="phone" placeholder="Ваш номер телефона">
+                        <input type="email" name="email" placeholder="Ваш E-Mail">
+                        <input type="text" name="tema" placeholder="Тема сообщения">
+                    </div>
+                    <div class="contact__right">
+                        <textarea name="subject" id="" cols="50" rows="10" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="contact__button">Отправить</button>
+            </form>
+            
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__block">
+                        <p class="footer__text">© 2015 Dmitriy Yun. All right reserved.</p>
+                        <div class="footer__social">
+                            <a href="" class="footer__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="" class="footer__link"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="" class="footer__link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    
+    <!-- Подключение jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Подключение Slick -->
+    <script src="js\slick.min.js"></script>
+    <!-- Подключение файла скриптов -->
+    <script src="js\script.js"></script>
+    
+    <!-- Подключение JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    
+    <!-- Подключение Свайпера -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</body>
+</html>
